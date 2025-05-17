@@ -5,6 +5,7 @@ import ProductDetail from '../pages/ProductDetail/ProductDetail.jsx';
 import ProductList from '../pages/ProductList/ProductList.jsx';
 import Checkout from '../pages/Checkout/Checkout.jsx'
 import Cart from '../pages/Cart/Cart.jsx';
+import Login from '../pages/Auth/Login.jsx';
 
 
 //404
@@ -29,11 +30,11 @@ const AppRoutes = () => {
       <Route path="/produto" element={<ProductDetail />} />
       <Route path="/checkout" element={<Checkout />} />
       {/* <Route path="/compra-realizada" element={< />} /> */}
-      {/* <Route path="/login" element={< />} /> */}
-      {/* <Route path="/cadastro" element={< />} /> */}
       {/* <Route path="/cadastro-formulario" element={< />} /> */}
       {/* <Route path="/pedidos" element={< />} /> */}
       {/* <Route path="/perfil" element={< />} /> */}
+      <Route path="/login" element={<Login />} />
+      {/* <Route path="/cadastro" element={< />} /> */}
 
       <Route path="*" element={<NotFound />} />
     </Routes>

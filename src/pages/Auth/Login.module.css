@@ -1,0 +1,152 @@
+/* src/pages/Auth/Login.module.css */
+.loginContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loginCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.loginTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.registerPrompt {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.registerLink {
+  color: #111827;
+  text-decoration: underline;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  background-color: #f9fafb;
+}
+
+.input:focus {
+  outline: none;
+  background-color: white;
+  border-color: #d1d5db;
+}
+
+.forgotPassword {
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+.forgotPassword a {
+  color: #111827;
+  text-decoration: underline;
+}
+
+.loginButton {
+  margin-top: 1rem;
+  background-color: #db2777;
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: #be185d;
+}
+
+.socialLogin {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.socialText {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.googleButton,
+.facebookButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.googleButton img,
+.facebookButton img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Product image - only visible on desktop */
+.productImage {
+  display: none;
+}
+
+/* Media query for desktop */
+@media (min-width: 1024px) {
+  .loginContainer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .productImage {
+    display: block;
+    width: 50%;
+    max-width: 550px;
+  }
+  
+  .productImage img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
